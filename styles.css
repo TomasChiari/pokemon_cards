@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.cards {
+    margin: 20vh auto;
+    width: 80vw;
+
+    background-color: white;
+    border-radius: 15px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+
+
+}
+
+.card {
+    height: 200px;
+    width: 150px;
+
+    margin: 30px;
+    padding: 10px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+}
+
+.card img:hover {
+    animation: move .1s 2;
+}
+
+@keyframes move {
+    0% {transform: translateY(-5px);}
+    100% {transform: translateY(5px);}
+}
+
+.name {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+}
+
+.venusaur {
+    background-color: #6eedd8;
+}
+
+.venusaur .name:hover {
+    background-color:#fea28f;
+    color: #b53d24;
+    border-radius: 5px;
+}
+
+.charizard {
+    background-color: #eca668;
+}
+
+.charizard .name:hover {
+    background-color:#eedd7a;
+    color: #207394;
+    border-radius: 5px;
+}
+
+
+.blastoise {
+    background-color: #80b4ef;
+}
+
+.blastoise .name:hover {
+    background-color: #d6d4d4;
+    color: #7e7470;
+    border-radius: 5px;
+}
+
+.number {
+    background-color: white;
+    border-radius: 10px;
+
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+}
+
+.type {
+    padding: 2px 8px;
+    border: 2px solid black;
+    border-radius: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.grass {background-color: #78C850;}
+
+.poison {background-color: #A040A0;}
+
+.fire {background-color: #F08030;}
+
+.flying {background-color: #A890F0;}
+
+.water {background-color: #6890F0;}
+
